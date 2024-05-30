@@ -102,20 +102,20 @@ const Header = () => {
       {menuOpen && (
         <div className="md:hidden bg-gray-100 dark:bg-gray-900 text-black dark:text-white flex flex-col space-y-4 p-4">
           <Link
+            to="/career"
+            className={`relative group ${
+              darkMode ? "text-white" : "text-black"
+            }`}
+          >
+            <button className="w-full h-8">Career</button>
+          </Link>
+          <Link
             to="/about"
             className={`relative group ${
               darkMode ? "text-white" : "text-black"
             }`}
           >
-            <button className="w-full h-8">About</button>
-          </Link>
-          <Link
-            to="/experience"
-            className={`relative group ${
-              darkMode ? "text-white" : "text-black"
-            }`}
-          >
-            <button className="w-full h-8">Experience</button>
+            <button className="w-full h-8">About Me</button>
           </Link>
           <Link
             to="/projects"

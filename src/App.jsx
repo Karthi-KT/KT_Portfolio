@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
+import Contact from "./Components/Contact";
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/career" element={<Career />} />
         <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills/>} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </div>
   );
