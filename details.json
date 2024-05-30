@@ -1,0 +1,90 @@
+{
+  "Front End": [
+    {
+      "name": "HTML5",
+      "rating": 5,
+      "logo": "/html-5.svg"
+    },
+    {
+      "name": "CSS3",
+      "rating": 5,
+      "logo": "/css3.svg"
+    },
+    {
+      "name": "ReactJS",
+      "rating": 5,
+      "logo": "/reactjs.svg"
+    },
+    {
+      "name": "BootStrap",
+      "rating": 4,
+      "logo": "/bootstrap.svg"
+    },
+    {
+      "name": "TailwindCss",
+      "rating": 4,
+      "logo": "/tailwind.svg"
+    },
+    {
+      "name": "ThreeJS",
+      "rating": 4,
+      "logo": "/threejs.svg"
+    }
+  ],
+  "Back End": [
+    {
+      "name": "nodeJs",
+      "rating": 4,
+      "logo": "/nodejs.svg"
+    },
+    {
+      "name": "expressJs",
+      "rating": 5,
+      "logo": "/express.svg"
+    },
+    {
+      "name": "django",
+      "rating": 3,
+      "logo": "/django.svg"
+    }
+  ],
+  "Languages": [
+    {
+      "name": "C",
+      "rating": 4,
+      "logo": "/c.svg"
+    },
+    {
+      "name": "Python",
+      "rating": 4,
+      "logo": "/python.svg"
+    },
+    {
+      "name": "JavaScript",
+      "rating": 5,
+      "logo": "/javascript.svg"
+    },
+    {
+      "name": "Java",
+      "rating": 3,
+      "logo": "/java.svg"
+    }
+  ],
+  "DB": [
+    {
+      "name": "SqlLite",
+      "rating": 4,
+      "logo": "/sqlite.svg"
+    },
+    {
+      "name": "MySql",
+      "rating": 4,
+      "logo": "/mysql.svg"
+    },
+    {
+      "name": "MongoDB",
+      "rating": 3,
+      "logo": "/mongo.svg"
+    }
+  ]
+}
