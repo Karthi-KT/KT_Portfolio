@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={`${darkMode ? "dark" : ""}`}>
       <div className="sticky top-0 w-full z-50 flex items-center justify-between p-2 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
         <div className="flex items-center space-x-4">
           <button onClick={toggleMenuOpen} className="text-xl md:hidden">
@@ -141,14 +141,14 @@ const Header = () => {
           >
             <button className="w-full h-8">Contact</button>
           </Link>
-          {/* <Link
+          <Link
             to="/resume"
             className={`relative group ${
               darkMode ? "text-white" : "text-black"
             }`}
           >
             <button className="w-full h-8">Resume</button>
-          </Link> */}
+          </Link>
         </div>
       )}
     </div>

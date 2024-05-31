@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 export const ThemeContext = createContext();
@@ -8,7 +8,6 @@ export const lightTheme = {
   text: "black",
   toggleBorder: "#FFF",
   background: "#363537",
-  darkMode: false,
 };
 
 export const darkTheme = {
@@ -16,10 +15,9 @@ export const darkTheme = {
   text: "white",
   toggleBorder: "#6B8096",
   background: "#999",
-  darkMode: true,
 };
 
-export const ThemeProvider = ({ children }) => {
+const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(lightTheme);
 
   const toggleTheme = () => {
@@ -31,7 +29,7 @@ export const ThemeProvider = ({ children }) => {
   useEffect(() => {
     document.documentElement.style.setProperty("--bg-color", theme.body);
     document.documentElement.style.setProperty("--text-color", theme.text);
-    if (theme.darkMode) {
+    if (theme === darkTheme) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
@@ -49,4 +47,4 @@ ThemeProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default ThemeContext;
+export default ThemeProvider;

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Project 1",
+    "description": "API demo-Weather Details",
+    "imageUrl": "/restAPI.png",
+    "link": "https://countries-weather-api-demo.netlify.app"
+  },
+  {
+    "title": "Project 2",
+    "description": "My-PortFolio",
+    "imageUrl": "/KT-DP.jpg",
+    "link": "https://karthikn-portfolio.netlify.app"
+  },
+  {
+    "title": "Project 3",
+    "description": "Description for project 3",
+    "imageUrl": "../assets/project3.jpg",
+    "link": "https://github.com/yourusername/project3"
+  },
+  {
+    "title": "Project 4",
+    "description": "Description for project 4",
+    "imageUrl": "../assets/project4.jpg",
+    "link": "https://github.com/yourusername/project4"
+  },
+  {
+    "title": "Project 5",
+    "description": "Description for project 5",
+    "imageUrl": "../assets/project5.jpg",
+    "link": "https://github.com/yourusername/project5"
+  },
+  {
+    "title": "Project 6",
+    "description": "Description for project 6",
+    "imageUrl": "../assets/project6.jpg",
+    "link": "https://github.com/yourusername/project6"
+  }
+]

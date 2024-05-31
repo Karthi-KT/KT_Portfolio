@@ -7,8 +7,8 @@ export const Skills = () => {
 
   return (
     <div className={`pt-16 ${darkMode ? "dark" : ""}`}>
-      <div className="w-full flex flex-col items-center p-4">
-        <div className="skills-container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+      <div className="w-full flex flex-col items-center p-4 bg-gray">
+        <div className="skills-container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-6xl ">
           {Object.entries(skillsData).map(([category, skills], index) => (
             <div
               key={index}
@@ -25,7 +25,7 @@ export const Skills = () => {
                   >
                     <div className="skill-name text-lg font-semibold mb-1 flex justify-between items-center">
                       {skill.name}
-                      <div className="stars flex items-center ">
+                      <div className="stars flex items-center">
                         {[...Array(5)].map((_, i) => (
                           <div
                             key={i}
@@ -33,12 +33,14 @@ export const Skills = () => {
                               i < skill.rating ? "" : "bg-gray-400"
                             }`}
                           >
-                            {i < skill.rating && (
+                            {i < skill.rating ? (
                               <img
                                 src={skill.logo}
                                 alt={skill.name}
                                 className="w-full h-full object-contain"
                               />
+                            ) : (
+                              <span className="w-full h-full block"></span>
                             )}
                           </div>
                         ))}
