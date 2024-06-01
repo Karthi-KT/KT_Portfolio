@@ -1,35 +1,25 @@
-import { useEffect, useState } from "react";
 import { useTheme } from "../App";
-
+import projectData from "../../projects.json";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-  const { darkMode } = useTheme()
-
-  useEffect(() => {
-    // Fetch the projects data from the JSON file
-    fetch("/projects.json")
-      .then((response) => response.json())
-      .then((data) => setProjects(data))
-      .catch((error) => console.error("Error fetching the projects:", error));
-  }, []);
+  const { darkMode } = useTheme();
 
   return (
     <div
-      className={`pt-10 pb-6 ${
+      className={`pt-8 pb-8 ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">My Projects</h2>
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
+      <div className="container mx-auto px-2">
+        {/* <h2 className="text-2xl font-bold text-center mb-8">My Projects</h2> */}
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {projectData.map((project, index) => (
             <div
               key={index}
               className="bg-white text-black rounded-lg overflow-hidden shadow-lg"
             >
               <img
-                className="object-cover w-full h-48"
+                className="object-cover w-full h-40"
                 src={project.imageUrl}
                 alt={project.title}
               />
