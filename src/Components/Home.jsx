@@ -14,7 +14,7 @@ const Home = () => {
         style={{ height: "calc(100vh - 44px)" }}
       >
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center space-y-4 p-4 ">
-          <h1 className="text-2xl md:text-4xl font-cinzel pb-3 text-center">
+          <h1 className="text-4xl md:text-4xl font-cinzel pb-3 text-center">
             <span>I'm Karthikeyan.T</span>
           </h1>
           <h6 className="text-2xl md:text-4xl font-cinzel pb-3 text-center">

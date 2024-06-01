@@ -5,16 +5,12 @@ const About = () => {
 
   return (
     <div
-      className={`pt-5 pb-5 min-h-screen ${
+      className={`pt-8 pb-8 ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
       <div className="w-full flex justify-center mt-8 px-4">
-        <div
-          className={`max-w-4xl ${
-            darkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-black"
-          } p-6 rounded-lg shadow-md`}
-        >
+        <div className={`max-w-4xl p-6 rounded-lg shadow-md`}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg md:text-xl">
             I am passionate about a multitude of activities that engage my mind
