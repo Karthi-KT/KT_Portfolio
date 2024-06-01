@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-
+import { useTheme } from "../App"; 
 const Contact = () => {
+  const { darkMode } = useTheme();
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
@@ -14,7 +15,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4">
+    <div
+      className={`${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+      }`}>
+    <div className="flex justify-center items-center min-h-screen p-4">
       <div className="flex flex-col md:flex-row justify-center items-center bg-white dark:bg-gray-800 shadow-lg p-6 md:p-10 rounded-lg space-y-6 md:space-y-0 md:space-x-12 w-full max-w-4xl">
         <div className="flex flex-col items-start space-y-4 md:space-y-6 w-full md:w-auto">
           <div>
@@ -75,6 +80,7 @@ const Contact = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -1,8 +1,14 @@
 import Typewriter from "typewriter-effect"; // Correct import statement
+import { useTheme } from "../App";
 
 const Home = () => {
+  const { darkMode } = useTheme();
   return (
-    <div>
+    <div
+      className={`pt-8 pb-8 ${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+      }`}
+    >
       <div
         className="flex flex-col md:flex-row h-screen items-center justify-center"
         style={{ height: "calc(100vh - 44px)" }}

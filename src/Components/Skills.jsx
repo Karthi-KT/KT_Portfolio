@@ -1,14 +1,17 @@
-// import { useContext } from "react";
-// import ThemeContext from "../../theme.jsx";
 import skillsData from "../../details.json";
+import { useTheme } from "../App";
 
 export const Skills = () => {
-  // const { darkMode } = useContext(ThemeContext);
+  const { darkMode } = useTheme();
 
   return (
-    <div className={`pt-16`}>
-      <div className="w-full flex flex-col items-center p-4 bg-gray">
-        <div className="skills-container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-6xl ">
+    <div
+      className={`pt-16 min-h-screen ${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+      }`}
+    >
+      <div className="w-full h-full flex flex-col items-center p-4">
+        <div className="skills-container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-6xl">
           {Object.entries(skillsData).map(([category, skills], index) => (
             <div
               key={index}
