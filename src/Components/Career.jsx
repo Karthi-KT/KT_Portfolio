@@ -1,10 +1,10 @@
-import { useContext } from "react";
-import ThemeContext from "../../theme.jsx";
+// import { useContext } from "react";
+// import ThemeContext from "../../theme.jsx";
 
 const Career = () => {
-  const { darkMode } = useContext(ThemeContext);
+  // const { darkMode } = useContext(ThemeContext);
   return (
-    <div className={`pt-16 ${darkMode ? "dark" : ""}`}>
+    <div className={`pt-16`}>
       <div className="flex-1 flex flex-col justify-between items-center">
         <div className="experience text-center flex flex-col items-center justify-center border w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mb-4 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:border-black ">
           <h2 className="text-2xl">Placement Trainer</h2>

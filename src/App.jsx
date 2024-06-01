@@ -6,14 +6,14 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
-import { useState } from "react";
-import ThemeContext from "../theme";
+// import { useState } from "react";
+// import ThemeContext from "../theme";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
   return (
     <div>
-      <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
+      {/* <ThemeContext.Provider value={{ darkMode, setDarkMode }}> */}
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-      </ThemeContext.Provider>
+      {/* </ThemeContext.Provider> */}
     </div>
   );
 };

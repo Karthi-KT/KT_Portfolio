@@ -1,11 +1,11 @@
-import { useContext } from "react";
-import ThemeContext from "../../theme.jsx";
+// import { useContext } from "react";
+// import ThemeContext from "../../theme.jsx";
 
 const About = () => {
-  const { darkMode } = useContext(ThemeContext);
+  // const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <div className="flex-shrink-0 w-screen h-full flex flex-col justify-start items-center relative">
         <h2 className="text-4xl md:text-6xl font-montserrat mt-0">
           What I Enjoy
