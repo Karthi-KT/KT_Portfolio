@@ -75,14 +75,14 @@ const Header = () => {
           >
             <button className="w-20 h-8">Contact</button>
           </Link>
-          {/* <Link
+          <Link
             href=""
             className={`relative group ${
               darkMode ? "text-white" : "text-black"
             }`}
           >
             <button className="w-20 h-8">Resume</button>
-          </Link> */}
+          </Link>
         </div>
         <button onClick={toggleTheme} className="text-xl">
           {darkMode ? <FaSun className="text-white" /> : <FaMoon />}
@@ -130,14 +130,14 @@ const Header = () => {
           >
             <button className="w-full h-8">Contact</button>
           </Link>
-          {/* <Link
+          <Link
             to="/resume"
             className={`relative group ${
               darkMode ? "text-white" : "text-black"
             }`}
           >
             <button className="w-full h-8">Resume</button>
-          </Link> */}
+          </Link>
         </div>
       )}
     </div>
