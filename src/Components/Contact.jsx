@@ -33,7 +33,7 @@ const Contact = () => {
             </div>
             <div>
               <h3 className="text-lg md:text-2xl">
-                Email: your-mathtrainerkarthik@gmail.com
+                Email: mathtrainerkarthik@gmail.com
               </h3>
             </div>
             <div className="flex items-center space-x-4 md:space-x-6">
