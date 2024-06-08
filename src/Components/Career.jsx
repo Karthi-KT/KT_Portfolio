@@ -25,13 +25,13 @@ const Career = () => {
             },
             {
               title: "Training Manager",
-              duration: "2018 - 2020",
+              duration: "Sep 2020 - Jul 2021 ",
               description:
                 "Managed a team of trainers and developed training programs to enhance employee skills across various departments. Coordinated with departments to identify and address training needs, and introduced a new self-evaluation method based on metacognitive principles to improve training quality. Designed and implemented customized training plans to ensure comprehensive skill development and operational readiness.",
             },
             {
               title: "Aptitude Trainer",
-              duration: "Jul 2013 – Aug 2021",
+              duration: "Jul 2013 – Aug 2020",
               description:
                 "Delivered focused training in aptitude and reasoning, preparing students for competitive exams and interviews with customized content and practical evaluation methods. Assessed student performance through tailored tests and provided feedback for continuous improvement. Blended programming with aptitude training to create an engaging learning environment, conducting sessions in diverse settings.",
             },
