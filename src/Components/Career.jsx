@@ -13,7 +13,7 @@ const Career = () => {
           {[
             {
               title: "FrontEnd Developer",
-              duration: "2022 - Present",
+              duration: "Oct 2022 - Present",
               description:
                 "Developed an intuitive LMS for TERV, featuring dynamic content delivery and real-time feedback. Spearheaded frontend development with React, ensuring a responsive interface integrated with backend Spring Boot APIs. Implemented real-time code evaluation and virtual classroom features, enhancing remote learning.",
             },
