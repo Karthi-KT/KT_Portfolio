@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`${darkMode ? "dark" : ""}`}>
+    <div className={`${darkMode ? "dark" : "bg-slate-100"}`}>
       <div className="sticky top-0 w-full z-50 flex items-center justify-between p-2 dark:bg-gray-900 text-black dark:text-white">
         <div className="flex items-center space-x-4">
           <button onClick={toggleMenuOpen} className="text-xl md:hidden">
@@ -51,14 +51,14 @@ const Header = () => {
           >
             <button className="w-20 h-8">About me</button>
           </Link>
-          <Link
+          {/* <Link
             to="/projects"
             className={`relative group ${
               darkMode ? "text-white" : "text-black"
             }`}
           >
             <button className="w-20 h-8">Projects</button>
-          </Link>
+          </Link> */}
           <Link
             to="/skills"
             className={`relative group ${
@@ -75,14 +75,16 @@ const Header = () => {
           >
             <button className="w-20 h-8">Contact</button>
           </Link>
-          <Link
-            href=""
+          <a
+            href="https://drive.google.com/file/d/1zCWongAm8TV_8eL1eoGWRCowr_aMy6CN/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`relative group ${
               darkMode ? "text-white" : "text-black"
             }`}
           >
             <button className="w-20 h-8">Resume</button>
-          </Link>
+          </a>
         </div>
         <button onClick={toggleTheme} className="text-xl">
           {darkMode ? <FaSun className="text-white" /> : <FaMoon />}
@@ -106,14 +108,14 @@ const Header = () => {
           >
             <button className="w-full h-8">About Me</button>
           </Link>
-          <Link
+          {/* <Link
             to="/projects"
             className={`relative group ${
               darkMode ? "text-white" : "text-black"
             }`}
           >
             <button className="w-full h-8">Projects</button>
-          </Link>
+          </Link> */}
           <Link
             to="/skills"
             className={`relative group ${
@@ -130,14 +132,16 @@ const Header = () => {
           >
             <button className="w-full h-8">Contact</button>
           </Link>
-          <Link
-            to="/resume"
+          <a
+            href="https://drive.google.com/file/d/1zCWongAm8TV_8eL1eoGWRCowr_aMy6CN/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`relative group ${
               darkMode ? "text-white" : "text-black"
             }`}
           >
             <button className="w-full h-8">Resume</button>
-          </Link>
+          </a>
         </div>
       )}
     </div>

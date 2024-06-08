@@ -5,7 +5,7 @@ const Career = () => {
   return (
     <div
       className={`min-h-screen pt-5 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+        darkMode ? "bg-gray-900 text-white" : "bg-slate-100 text-black"
       }`}
     >
       <div className="p-5">
@@ -15,25 +15,25 @@ const Career = () => {
               title: "FrontEnd Developer",
               duration: "2022 - Present",
               description:
-                "Developed and maintained web applications using modern frontend technologies. Worked closely with designers to create responsive and user-friendly interfaces.",
+                "Developed an intuitive LMS for TERV, featuring dynamic content delivery and real-time feedback. Spearheaded frontend development with React, ensuring a responsive interface integrated with backend Spring Boot APIs. Implemented real-time code evaluation and virtual classroom features, enhancing remote learning.",
             },
             {
               title: "Technical Trainer",
-              duration: "2020 - 2022",
+              duration: "Sep 2021 – Sep 2022",
               description:
-                "Conducted technical training sessions on various software development tools and languages. Helped new hires integrate into the technical team.",
+                "Provided comprehensive training in C, Python, and Full Stack development, targeting college students in both offline and online formats. Created and delivered custom content, including evaluation tests and company-specific modules, aligning with industry requirements for IT and non-IT sectors. Led sessions, managed team members, and developed detailed teaching plans to enhance the learning experience and session effectiveness.",
             },
             {
               title: "Training Manager",
               duration: "2018 - 2020",
               description:
-                "Managed a team of trainers and developed training programs to enhance employee skills. Coordinated with various departments to identify training needs.",
+                "Managed a team of trainers and developed training programs to enhance employee skills across various departments. Coordinated with departments to identify and address training needs, and introduced a new self-evaluation method based on metacognitive principles to improve training quality. Designed and implemented customized training plans to ensure comprehensive skill development and operational readiness.",
             },
             {
-              title: "Placement Trainer",
-              duration: "2013 - 2018",
+              title: "Aptitude Trainer",
+              duration: "Jul 2013 – Aug 2021",
               description:
-                "Responsible for conducting training sessions for students to improve their placement skills. Focused on soft skills, technical skills, and interview preparation.",
+                "Delivered focused training in aptitude and reasoning, preparing students for competitive exams and interviews with customized content and practical evaluation methods. Assessed student performance through tailored tests and provided feedback for continuous improvement. Blended programming with aptitude training to create an engaging learning environment, conducting sessions in diverse settings.",
             },
           ].map((job, index) => (
             <div

@@ -6,21 +6,22 @@ const About = () => {
   return (
     <div
       className={`p-4 min-h-screen ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+        darkMode ? "bg-gray-900 text-white" : "bg-slate-100 text-black"
       }`}
     >
       <div className="w-full flex justify-center">
         <div className="max-w-7xl p-6 rounded-lg shadow-md">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg md:text-xl">
-            I am passionate about a multitude of activities that engage my mind
-            and creativity. From playing cards and performing card tricks to
-            writing detailed stories about life experiences, I find joy in
-            expressing myself in various forms. Creating memes to deliver
-            educational content is another avenue I enjoy, as it allows me to
-            combine humor with teaching, making learning a fun and engaging
-            process. My empathetic nature helps me connect with people, and I
-            love sharing my knowledge and experiences with others.
+            I am a person with a knack for bringing humor into everything I do.
+            With years of experience under my belt, I've had the pleasure of
+            merging creativity and subject to craft engaging ways to learn and
+            work with it. I love learning things with fun, because I believe in
+            "When you learn, make sure you learn such a way you're clear enough
+            to explain it to anyone". Beyond my profession, I'm known for my kindness
+            and my love for connecting with people. Whether it's a friendly chat
+            or lending a helping hand, I enjoy making those around me smile and
+            feel valued.
           </p>
         </div>
       </div>
@@ -31,6 +32,12 @@ const About = () => {
         </h2>
         <div className="flex flex-wrap justify-center w-full">
           {[
+            {
+              imgSrc: "/Memes.png",
+              title: "Meme creator",
+              description:
+                "Teaching is fun. Teaching things in a funny way, is the biggest pleasure. Adapting to new generation and creating memes to deliver content is one thing I enjoy the most and it keeps me more engaged with the subject!",
+            },
             {
               imgSrc: "/cards.png",
               title: "Fun with Playing cards",
@@ -43,12 +50,6 @@ const About = () => {
               description:
                 "Being an empathetic person, I can connect with anyone so easily. At times, I would love to convert the incidents to stories. What makes it interesting is, giving detailed description of even small things that happened.",
             },
-            {
-              imgSrc: "/Memes.png",
-              title: "Meme creator",
-              description:
-                "Teaching is fun. Teaching things in a funny way, is the biggest pleasure. Adapting to new generation and creating memes to deliver content is one thing I enjoy the most and it keeps me more engaged with the subject!",
-            },
           ].map((hobby, index) => (
             <div
               key={index}
@@ -57,7 +58,7 @@ const About = () => {
               <img
                 src={hobby.imgSrc}
                 alt={hobby.title}
-                className="object-cover w-32 h-32 md:w-48 md:h-48 rounded-full hover:border-8 hover:border-green"
+                className="object-cover w-32 h-32 md:w-48 md:h-48 rounded-full hover:border-8 hover:border-green hover:object-contain"
               />
               <h3 className="text-xl md:text-2xl font-cursive">
                 {hobby.title}

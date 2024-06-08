@@ -7,7 +7,7 @@
     },
     {
       "name": "CSS3",
-      "rating": 5,
+      "rating": 4,
       "logo": "/css3.svg"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "name": "ThreeJS",
-      "rating": 4,
+      "rating": 3,
       "logo": "/threejs.svg"
     }
   ],
@@ -39,12 +39,12 @@
     },
     {
       "name": "expressJs",
-      "rating": 5,
+      "rating": 2,
       "logo": "/express.svg"
     },
     {
       "name": "django",
-      "rating": 3,
+      "rating": 2,
       "logo": "/django.svg"
     }
   ],
@@ -56,17 +56,17 @@
     },
     {
       "name": "Python",
-      "rating": 4,
+      "rating": 3,
       "logo": "/python.svg"
     },
     {
       "name": "JavaScript",
-      "rating": 5,
+      "rating": 4,
       "logo": "/javascript.svg"
     },
     {
       "name": "Java",
-      "rating": 3,
+      "rating": 2,
       "logo": "/java.svg"
     }
   ],

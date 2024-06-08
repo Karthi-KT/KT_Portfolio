@@ -7,9 +7,10 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
-import Projects from "./Components/Projects";
+// import Projects from "./Components/Projects";
 import NotFound from "./Components/NotFound"; // Import the NotFound component
 import "tailwindcss/tailwind.css";
+// import Resume from "./Components/Resume";
 
 // Create a context for the theme
 const ThemeContext = createContext();
@@ -25,10 +26,10 @@ const App = () => {
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
     if (darkMode) {
-      document.documentElement.style.setProperty("--bg-color", "#999999");
+      document.documentElement.style.setProperty("--bg-color", "#1f2937");
       document.documentElement.style.setProperty("--text-color", "white");
     } else {
-      document.documentElement.style.setProperty("--bg-color", "white");
+      document.documentElement.style.setProperty("--bg-color", "#e2e8f0");
       document.documentElement.style.setProperty("--text-color", "black");
     }
   }, [darkMode]);
@@ -48,8 +49,8 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/resume"/>
+            {/* <Route path="/projects" element={<Projects />} /> */}
+            {/* <Route path="/resume" element={<Resume />} /> */}
             <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
           </Routes>
         </BrowserRouter>

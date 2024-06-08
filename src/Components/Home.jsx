@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div
       className={`pt-8 pb-8 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+        darkMode ? "bg-gray-900 text-white" : "bg-slate-100 text-black"
       }`}
     >
       <div
